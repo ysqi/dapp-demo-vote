@@ -1,0 +1,19 @@
+{
+  "name": "photo-vote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "node": "bash ./scripts/runNode.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ysqi",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <title>投票DAPP</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1>2019 年，哪张照片最感动你</h1>
+      <label>钱包：</label>
+      <select class="mb-3 right" id="wallets">
+      </select>
+    </div>
+
+    <div class="contentContainer">
+      <div id="photoview">
+        <div>
+          <button type="button" class="btn btn-link joinLink"> 我要上传作品 </button>
+        </div>
+        <div class="row photoList">
+          <div class="text-center col-sm-12">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 提交表单 -->
+      <div id="forms" style="display: none;">
+        <form id="joinForm">
+          <div class="form-group">
+            <label for="photoInput">照片地址</label>
+            <input type="photo" name="photo" class="form-control" id="photoInput" aria-describedby="photoHelp" required>
+            <small id="photoHelp" class="form-text text-muted">可以公开访问的照片地址</small>
+          </div>
+          <div class="form-group">
+            <label for="storyInput">故事</label>
+            <textarea class="form-control" name="story" rows="3" id="storyInput" aria-describedby="storyHelp"
+              required></textarea>
+            <small id="storyHelp" class="form-text text-muted">简洁描述这张照片背后的故事</small>
+          </div>
+          <button type="button" class="btn btn-link cancelJoin">放弃</button>
+          <button type="submit" class="btn btn-link">
+            <span class="spinner-border spinner-border-sm invisible" role="status" aria-hidden="true"></span>
+            提交</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- This exposes the library as a global variable: ethers -->
+  <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"> </script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
